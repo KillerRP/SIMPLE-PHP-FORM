@@ -7,7 +7,7 @@ $database = "test1";
 
 $Connection = mysqli_connect($servername, $username, $password, $database);
 if($Connection){
-	echo "Connection Success $database";
+	echo "Connection Success <br>";
 }else{
 	die("Connection Failed : " .mysqli_connect_error());
 }

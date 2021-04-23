@@ -9,7 +9,7 @@ $dob = $_POST['dob'];
 
 if(isset($_POST['submit'])){
 	$sql = "INSERT INTO `form`(`name`,`sem`,`div`,`rollno`,`dob`)VALUES('$name','$sem','$div','$rollno','$dob');";
-	echo $sql;
+	
 	$res = mysqli_query($Connection,$sql);
 	if($res){
 		echo "DONE ! DATA INSERTED";
